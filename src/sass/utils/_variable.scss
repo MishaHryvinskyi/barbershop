@@ -23,5 +23,8 @@ $font-size: (
 }
 
 @function getSize($key) {
-    @return map-get($size, $key);
+    @return map-get($font-size, $key);
 }
+
+$cubic : cubic-bezier(0.4, 0, 0.2, 1);
+$time: 500ms;
