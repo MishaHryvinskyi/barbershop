@@ -1,0 +1,27 @@
+.soc__list {
+    @include center;
+    & .soc__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.soc__item {
+    @include size(40px, 40px);
+}
+
+.soc__link {
+    @include size(100%, 100%);
+    @include center;
+    background-color: getColor('main-bg-color');
+    border-radius: 50%;
+
+    &:hover .soc__svg {
+        fill: getColor('accent-color');
+        transition: $time $cubic;
+    }
+}
+
+.soc__svg {
+    transition: $time $cubic;
+    @include size(20px, 20px);
+}

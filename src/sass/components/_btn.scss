@@ -1,0 +1,23 @@
+.btn {
+    cursor: pointer;
+    padding: 12px;
+    @include size(160px);
+    color: getColor('main-bg-color');
+    background-color: transparent;
+    border: 1px solid getColor('accent-color');
+    border-radius: 25px;
+
+    font-size: getSize('btn');
+    font-weight: 600;
+    letter-spacing: 1.08px;
+    transition: $time $cubic;
+
+    &:hover {
+        background-color: getColor('accent-color');
+        transition: $time $cubic;
+    }
+
+    &.btn-white {
+        color: inherit;
+    }
+}
