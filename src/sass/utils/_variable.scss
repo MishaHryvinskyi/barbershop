@@ -1,0 +1,27 @@
+$colors: (
+    'main-text-color' :#303030,
+    'secondary-text-color': #555,
+    'main-bg-color': #FFF,
+    'secondary-bg-color': #F7F7F7,
+    'accent-color': #FF6C00,
+);
+
+$font-size: (
+    'little-smal': 11px,
+    'btn': 12px,
+    'small': 14px,
+    'small-big': 16px,
+    'little': 18px,
+    'header-size-mob': 28px,
+    'header-size': 42px,
+    'main-header-mob': 48px,
+    'main-header': 72px
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+@function getSize($key) {
+    @return map-get($size, $key);
+}
