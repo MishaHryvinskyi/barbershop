@@ -1,0 +1,31 @@
+.our-barbers__list {
+    text-align: center;
+    
+    & .our-barbers__item:not(:last-child) {
+        margin-bottom: 64px;
+    }
+}
+
+.our-barbers__title {
+    margin: 30px 0 8px 0;
+    font-size: getSize('little');
+    font-weight: 400;
+    letter-spacing: 0.36px;
+
+    & + p {
+        color: getColor('accent-color');
+        font-size: getSize('small');
+        letter-spacing: 0.28px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .our-barbers__list {
+        display: flex;
+
+        & .our-barbers__item:not(:last-child) {
+            margin: 0 30px 0 0;
+        }
+    }
+}

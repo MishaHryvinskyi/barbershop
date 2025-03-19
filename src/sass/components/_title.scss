@@ -3,7 +3,7 @@
     font-size: getSize('header-size');
     font-weight: 700;
     letter-spacing: 2.1px;
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 
     &.mg {
         margin-bottom: 44px;
@@ -12,4 +12,10 @@
     &.white {
         color: getColor('main-bg-color');
     }
+}
+
+.pre-title {
+    font-size: getSize('pre-title');
+    font-weight: 600;
+    text-transform: uppercase;
 }
