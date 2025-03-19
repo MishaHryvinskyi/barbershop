@@ -1,0 +1,10 @@
+@mixin size($width, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
