@@ -1,0 +1,15 @@
+.title {
+    font-family: Raleway;
+    font-size: getSize('header-size');
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    margin-bottom: 20px;
+
+    &.mg {
+        margin-bottom: 44px;
+    }
+
+    &.white {
+        color: getColor('main-bg-color');
+    }
+}
