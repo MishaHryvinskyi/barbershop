@@ -3,8 +3,9 @@
     height: $height;
 }
 
-@mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin center ($f, $f-d: row, $ali-i: center, $jus-c: center) {
+    display: $f;
+    flex-direction: $f-d;
+    align-items: $ali-i;
+    justify-content: $jus-c;
 }

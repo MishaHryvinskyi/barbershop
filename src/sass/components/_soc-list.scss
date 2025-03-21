@@ -1,5 +1,5 @@
 .soc__list {
-    @include center;
+    @include center(flex);
     & .soc__item:not(:last-child) {
         margin-right: 10px;
     }
@@ -11,7 +11,7 @@
 
 .soc__link {
     @include size(100%, 100%);
-    @include center;
+    @include center(flex);
     background-color: getColor('main-bg-color');
     border-radius: 50%;
 

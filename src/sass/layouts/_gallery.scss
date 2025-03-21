@@ -21,7 +21,7 @@
 
 @media screen and (min-width: 768px) {
     .gallery__list {
-        @include center;
+        @include center(flex);
     }
 }
 
