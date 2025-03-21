@@ -20,6 +20,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    color: currentColor;
 
     &::before {
         content: '';

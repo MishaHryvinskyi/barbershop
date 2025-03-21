@@ -9,3 +9,8 @@
     align-items: $ali-i;
     justify-content: $jus-c;
 }
+
+@mixin fonts-size($fs: 16px, $fw: 400) {
+    font-size: $fs;
+    font-weight: $fw;
+}

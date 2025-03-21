@@ -1,5 +1,5 @@
 .btn {
-    display: inline-block;
+    display: block;
     cursor: pointer;
     padding: 12px;
     @include size(160px);
@@ -7,6 +7,7 @@
     border: 1px solid getColor('accent-color');
     border-radius: 25px;
     text-align: center;
+    text-transform: uppercase;
 
     font-size: getSize('btn');
     font-weight: 600;
@@ -19,6 +20,10 @@
     }
 
     &.white {
-        color: getColor('main-bg-color');;
+        color: getColor('main-bg-color');
+    }
+
+    &.center {
+        margin: 0 auto;
     }
 }
