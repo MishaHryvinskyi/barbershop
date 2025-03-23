@@ -1,6 +1,6 @@
 .servises {
     color: getColor('bg-img-tx-color');
-    background: getColor('bg-img') url(../images/services/bg-servises-mobile-1x.png) no-repeat center;
+    background: getColor('bg-img') url(../images/services-img/bg-servises-mobile-1x.png) no-repeat center;
     background-size: cover;
 }
 
@@ -13,9 +13,7 @@
 }
 
 .servises__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    @include center(flex, row, baseline, space-between);
     @include fonts-size(14, 400);
     line-height: calc(20 / 14);
     letter-spacing: 0.28px;
@@ -43,11 +41,7 @@
     }
 
     .servises__list.first {
-        padding: 30px 20px 0 20px;
-    
-        & .servises__item {
-            margin-bottom: 20px;
-        }
+        padding: 30px 20px 20px 20px;
     }
     
     .servises__list.second {
@@ -57,7 +51,7 @@
 
 @media screen and (min-width:768px) and (max-width:1199px) {
     .servises {
-        background: getColor('bg-img') url(../images/services/bg-servises-tablet-1x.png) no-repeat center;
+        background: getColor('bg-img') url(../images/services-img/bg-servises-tablet-1x.png) no-repeat center;
         background-size: cover;
     }
 }
@@ -72,15 +66,13 @@
 
 @media screen and (min-width:1200px) {
     .servises {
-        background: getColor('bg-img') url(../images/services/bg-servises-desktop-1x.png) no-repeat top;
+        background: getColor('bg-img') url(../images/services-img/bg-servises-desktop-1x.png) no-repeat top;
         background-size: cover;
     }
 
     .servises-wrapper {
         width: 1170px;
-        display: flex;
-        justify-content: space-between;
-
+        @include center(flex, row, center, space-between);
     }
 
     .servises__list {
