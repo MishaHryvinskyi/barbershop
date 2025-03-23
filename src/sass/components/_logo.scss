@@ -1,0 +1,7 @@
+.logo {
+    display: block;
+    
+    & .logo__svg {
+        @include size(69px, 56px);
+    }
+}
