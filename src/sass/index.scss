@@ -4,12 +4,15 @@
 @import './base/reset';
 @import './utils/mixin';
 // components
+@import './components/logo';
 @import './components/soc-list';
 @import './components/btn';
+@import './components/menu-btn';
 @import './components/title';
 @import './components/container';
 @import './components/section';
 // layouts
+@import './layouts/header';
 @import './layouts/about';
 @import './layouts/services-price';
 @import './layouts/our-barbers';
