@@ -17,7 +17,7 @@
 
 .benefits__item {
     @include center(flex, column, center, center);
-    @include size(193px, 133px);
+    @include size(calc((100% - 30px) / 2), 133px);
     padding: 20px;
     text-align: center;
     background-color: getColor('secondary-bg-color');
@@ -54,10 +54,6 @@
         margin-left: auto;
         width: 450px;
     }
-
-    .benefits__item {
-        @include size(210px, 133px);
-    }
 }
 
 @media screen and (min-width:768px) {
@@ -72,11 +68,8 @@
     }
 
     .benefits__list {
+        width: 370px;
         justify-content: end;
         margin-right: 130px;
-    }
-
-    .benefits__item {
-        @include size(170px, 133px);
     }
 }

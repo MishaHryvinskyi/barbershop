@@ -5,3 +5,9 @@
         @include size(69px, 56px);
     }
 }
+
+@media screen and (max-width:767px) {
+    .logo {
+        fill: getColor('main-bg-color');
+    }
+}

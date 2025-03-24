@@ -1,6 +1,7 @@
 .menu-btn {
     cursor: pointer;
     border: none;
+    padding: 0;
     background-color: transparent;
     @include center(flex, row, center, center);
     @include size(40px, 40px);
