@@ -1,9 +1,12 @@
-@media screen and (min-width: 320px) and (max-width:767px) {
-    .gallery__list {
+.hidden {
+    height: 44px;
+    opacity: 0;
+    visibility: hidden;
+}
 
-        & .gallery__item:not(:last-child) {
-            margin-bottom: 30px;
-        }
+@media screen and (min-width: 320px) and (max-width:767px) {
+    .gallery__list .gallery__item:not(:last-child) {
+        margin-bottom: 30px;
     }
 }
 
@@ -26,9 +29,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .gallery__list {
-        & .gallery__item:not(:last-child) {
-            margin-right: 30px;
-        }
+    .gallery__list .gallery__item:not(:last-child) {
+           margin-right: 30px;
     }
 }
