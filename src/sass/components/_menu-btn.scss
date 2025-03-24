@@ -1,4 +1,4 @@
-.menu {
+.menu-btn {
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .menu {
+    .menu-btn {
         display: none;
     }
 }

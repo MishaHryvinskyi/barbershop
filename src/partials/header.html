@@ -28,10 +28,45 @@
             <a class="btn" href="#contacts">Online-booking</a>
         </li>
     </ul>
-    <button type="button" class="menu" aria-label="menu-button">
+    <div class="menu menu-js">
+        <nav class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="#about">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#services">Services and prices</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#barbers">Barbers</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a class="menu__link" href="tel:+380441111111">+38 044 111 11 11</a>
+            </li>
+            <li class="menu__item">
+                <a class="btn" href="#contacts">Online-booking</a>
+            </li>
+        </ul>
+        <ul class="menu__soc">
+            <li class="menu__soc-item"><a href="#"></a>Instagram</li>
+            <li class="menu__soc-item"><a href="#"></a>Youtube</li>
+        </ul>
+        <button type="button" class="menu-btn-close btn-close-js" aria-label="menu-button">
+            <svg class="menu__svg-close">
+                <use
+                href="./images/svg/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+    <button type="button" class="menu-btn btn-open-js" aria-label="menu-button">
         <svg class="menu__svg">
-            <use class="menu__open" href="./images/svg/symbol-defs.svg#icon-menu"></use>
-            <use class="menu__close" href="./images/svg/symbol-defs.svg#icon-close"></use>
+            <use href="./images/svg/symbol-defs.svg#icon-menu"></use>
         </svg>
     </button>
 </div>
