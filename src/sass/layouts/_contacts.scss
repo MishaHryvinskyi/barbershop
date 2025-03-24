@@ -1,0 +1,101 @@
+.contacts-wrapper {
+    background-color: getColor('bg-form');
+}
+
+.contacts__title {
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.form__input,
+.form__area {
+    cursor: pointer;
+    width: 100%;
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid getColor('bg-img-tx-color');
+    margin-bottom: 37px;
+    background-color: transparent;
+    transition: $time $cubic;
+
+    &:hover {
+        border-bottom: 1px solid getColor('main-bg-color');
+        transition: $time $cubic;
+    }
+
+    &:hover::placeholder {
+       color: getColor('main-bg-color');
+       transition: $time $cubic;
+    }
+}
+
+.form__btn {
+    margin: 45px auto 0 auto;
+}
+
+@media screen and (min-width:768px) and (max-width: 1199px) {
+    .form__input {
+        width: 330px;
+        display: inline;
+    }
+
+    .mg {
+        margin-right: 41px;
+    }
+
+    .form__btn {
+        margin: 45px 0 0 0;
+    }
+}
+
+.contacts {
+    color: getColor('bg-img-tx-color');
+    font-size: getSize('little');
+    font-weight: 700;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.36px;
+}
+
+.contacts__list {
+    margin-bottom: 44px;
+    & .contacts__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.contacts__pre-title {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .contacts__address {
+        display: flex;
+    }
+
+    .contacts__list {
+        margin-right: 120px;
+    }
+
+    .contacts__pre-title {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contacts {
+        background-image: url(../images/contacts/contacts-bg-mobile-1x.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+}
+
+@media screen and (max-width:1199px) {
+    .contacts {
+        background-image: url(../images/contacts/contacts-bg-tablet-1x.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+}
