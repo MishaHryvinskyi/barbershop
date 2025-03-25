@@ -19,6 +19,12 @@
     background-color: transparent;
     transition: $time $cubic;
 
+    &::placeholder {
+        font-size: getSize('pre-title');
+        font-weight: 600;
+        letter-spacing: 1.1px;
+    }
+
     &:hover {
         border-bottom: 1px solid getColor('main-bg-color');
         transition: $time $cubic;
@@ -30,8 +36,22 @@
     }
 }
 
+.white {
+    color: getColor('main-bg-color');
+}
+
 .form__btn {
     margin: 45px auto 0 auto;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__svg {
+    @include size(24px, 24px);
+    margin-right: 16px;
 }
 
 @media screen and (min-width:768px) and (max-width: 1199px) {
@@ -59,13 +79,10 @@
 
 .contacts__list {
     margin-bottom: 44px;
+
     & .contacts__item:not(:last-child) {
         margin-bottom: 20px;
     }
-}
-
-.contacts__pre-title {
-    margin-bottom: 20px;
 }
 
 @media screen and (min-width:768px) {
@@ -82,7 +99,11 @@
     }
 }
 
-@media screen and (max-width:767px) {
+.contacts__pre-title {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
     .contacts {
         background-image: url(../images/contacts/contacts-bg-mobile-1x.png);
         background-position: center;
@@ -91,7 +112,7 @@
     }   
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
     .contacts {
         background-image: url(../images/contacts/contacts-bg-tablet-1x.png);
         background-position: center;
