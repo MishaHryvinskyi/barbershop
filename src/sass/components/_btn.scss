@@ -14,7 +14,8 @@
     letter-spacing: 1.08px;
     transition: $time $cubic;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: getColor('accent-color');
         transition: $time $cubic;
     }
