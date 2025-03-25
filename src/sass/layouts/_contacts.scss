@@ -1,3 +1,9 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: getColor('bg-form');
+}
+
 .contacts-wrapper {
     background-color: getColor('bg-form');
 }
@@ -119,4 +125,27 @@
         background-repeat: no-repeat;
         background-size: cover;
     }   
+}
+
+@media screen and (min-width:1200px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contacts {
+        background-image: url(../images/contacts/contacts-bg-tablet-1x.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    
+    .contacts__address {
+        width: 785px;
+        flex-direction: column;
+    }
+
+    .form {
+        margin-left: auto;
+    }
 }
