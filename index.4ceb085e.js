@@ -1,2 +1,0 @@
-const e=document.querySelectorAll("h2.title");const t=document.querySelector(".menu-js");const n=document.querySelector(".btn-open-js"),c=document.querySelector(".btn-close-js");n.addEventListener("click",(function(){t.classList.add("open")})),c.addEventListener("click",(function(){t.classList.remove("open")})),window.addEventListener("scroll",(function(){e.forEach((e=>{const t=e.getBoundingClientRect();t.top>=0&&t.top<=.75*window.innerHeight?e.classList.add("active-title"):e.classList.remove("active-title")}))}));
-//# sourceMappingURL=index.4ceb085e.js.map

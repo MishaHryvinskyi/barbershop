@@ -1,2 +1,0 @@
-!function(){var e=document.querySelectorAll("h2.title");var t=document.querySelector(".menu-js");var n=document.querySelector(".btn-open-js"),c=document.querySelector(".btn-close-js");n.addEventListener("click",(function(){t.classList.add("open")})),c.addEventListener("click",(function(){t.classList.remove("open")})),window.addEventListener("scroll",(function(){e.forEach((function(e){var t=e.getBoundingClientRect();t.top>=0&&t.top<=.75*window.innerHeight?e.classList.add("active-title"):e.classList.remove("active-title")}))}))}();
-//# sourceMappingURL=index.d9885df4.js.map
