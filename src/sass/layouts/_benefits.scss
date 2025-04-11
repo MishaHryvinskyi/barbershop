@@ -43,26 +43,26 @@
     font-weight: 600;
 }
 
-@media screen and (max-width:1199px) {
-    .benefits__wrapper {
-        margin-bottom: 44px;
+@media (min-width:768px) {
+    .benefits__description {
+        width: 500px;
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media (min-width:768px) and (max-width:1199px) {
     .benefits__list {
         margin-left: auto;
         width: 450px;
     }
 }
 
-@media screen and (min-width:768px) {
-    .benefits__description {
-        width: 500px;
+@media (max-width:1199px) {
+    .benefits__wrapper {
+        margin-bottom: 44px;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .benefits {
         flex-direction: row;
     }

@@ -74,7 +74,7 @@
     }
 }
 
-@media screen and (min-width:768px) and (max-width: 1199px) {
+@media (min-width:768px) and (max-width: 1199px) {
     .wrapper {
         background: url(../images/contacts/contacts-bg-tablet-1x.png)0 550px/ contain no-repeat, getColor('bg-form');
     }  
@@ -84,7 +84,7 @@
     }
 }
 
-@media screen and (min-width:768px) {
+@media (min-width:768px) {
     .contacts__title {
         text-align: left;
     }
@@ -100,7 +100,7 @@
     }
 }
 
-@media screen and (min-width:1200px) {
+@media (min-width:1200px) {
     .wrapper {
         background: url(../images/contacts/contacts-bg-tablet-1x.png) 980px / contain no-repeat, getColor('bg-form');
     } 
