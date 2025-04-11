@@ -1,7 +1,33 @@
 .hidden {
-    height: 44px;
-    opacity: 0;
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.m-b {
+    margin-bottom: 71px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 @media (min-width: 320px) and (max-width:767px) {
@@ -10,10 +36,12 @@
     }
 }
 
-
 @media (min-width: 768px) {
     .gallery__list {
         @include center(flex);
+    }
+    .m-b {
+        margin-bottom: 44px;
     }
 }
 
