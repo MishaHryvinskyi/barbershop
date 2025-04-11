@@ -2,10 +2,7 @@
     position: relative;
     color: getColor('bg-img-tx-color');
     padding: 208px 31px 208px 31px;
-    background-image: url(../images/hero/hero-bg-mobile-4x.jpg);
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url(../images/hero/hero-bg-mobile-4x.jpg) top /cover no-repeat;
 }
 
 .hero__title {
@@ -23,14 +20,14 @@
 
 @media (min-width:768px) and (max-width: 1199px)  {
     .hero {
-        background-image: url(../images/hero/hero-bg-tablet-4x.jpg);
+        background: url(../images/hero/hero-bg-tablet-4x.jpg) 120px/ cover no-repeat;
     }
 }
 
 @media (min-width: 1200px) {
     .hero {
         position: relative;
-        background-image: url(../images/hero/hero-bg-desktop-4x.jpg);
+        background: url(../images/hero/hero-bg-desktop-4x.jpg) 130px/ contain no-repeat;
         color: getColor('bg-img-tx-color');
     }
     
