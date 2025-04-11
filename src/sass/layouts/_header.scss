@@ -1,3 +1,11 @@
+.header {
+    font-size: getSize('btn');
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: getColor('main-bg-color');
+    z-index: 13;
+}
+
 .header-position {
     position: absolute;
     top: 0;
@@ -6,18 +14,9 @@
     z-index: 2;
 }
 
-.header {
-    font-size: getSize('btn');
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    background-color: #555;
-    color: getColor('main-bg-color');
-    z-index: 13;
-}
-
 .header__container {
     padding: 48px 0;
-    @include center(flex, row, center, space-between);
+    display: flex;
 }
 
 .header__list {
@@ -26,100 +25,120 @@
 
 .header__link {
     display: inline-block;
-    padding: 15px 0;
-    transition: $time $cubic;
-
+    transition: color $time $cubic;
     &:hover {
         color:getColor('accent-color');
-        transition: $time $cubic;
     }
 }
 
-.menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 337px;
-    height: 100vh;
-    color: getColor('main-text-color');
-    background-color: getColor('main-bg-color');
-    padding: 118px 40px;
-    z-index: 20;
+.menu-btn {
+    z-index: 30;
+}
 
-    font-size: getSize('little');
-    font-weight: 600;
-    letter-spacing: 1.8px;
+.close-menu {
+    fill: currentColor;
+    transition: visibility 500ms, opacity 500ms;
     opacity: 0;
-    transform: translateX(-100%);
-    transition: $time $cubic;
+    visibility: hidden;
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover {
+        fill:getColor('accent-color');
+    }
 }
 
-.menu.open {
-    transform: translateX(0);
-    opacity: 1;
-    transition: $time $cubic;
-}
+@media (max-width: 767px) {
+    .header__container {
+        justify-content: space-between;
+    }
 
-.menu__list {
-    margin-bottom: 64px;
-    & .menu__item:not(:last-child) {
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 337px;
+        color: getColor('main-text-color');
+        background-color: getColor('main-bg-color');
+        padding: 118px 40px;
+        z-index: 20;
+        transform: translateX(100%);
+        font-size: getSize('little');
+        letter-spacing: 1.8px;
+        transition: $time $cubic;
+
+        &.open {
+            transform: translateX(0);
+            transition: $time $cubic;
+        }
+    }
+    
+    .header__list {
+        display: block;
+        font-size: getSize('little');
+        
+        & .header__item:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .header__list-btn {
+        margin: 64px 0;
+    }
+
+    .menu__soc .menu__soc-item:not(:last-child) {
         margin-bottom: 24px;
     }
 }
 
-.menu__link:hover {
-    color: getColor('accent-color');
-}
-
-.menu-btn-close {
-    display: flex;
-    position: absolute;
-    top: 48;
-    right: 31;
-    @include size(40px, 40px);
-    border: none;
-    background-color: transparent;
-}
-
-.menu__svg-close {
-    fill: getColor('main-text-color');
-}
-
-
-@media screen and (max-width: 767px) {
-    .header__nav,.header__list {
-        display: none;
-    }
-}
-
-
-
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .header__container {
         padding: 40px 0;
     }
-
     .menu {
         display: none;
     }
+    .mobile-menu {
+        display: flex;
+        margin-left: auto;
+    }
+    .menu__soc {
+        display: none;
+    }
+    .header__link{
+        padding: 15px 0;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media (max-width:1199px) {
+    .header__list-btn .header__item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1199px) {
     .header__list {
         & .header__item:not(:last-child) {
             margin-right: 16px;
         }
     }
+    .header__list-btn {
+        flex-direction: column-reverse;
+        justify-content:flex-end;
+        margin-left: 37px;
+    }
 }
 
-@media screen and (min-width:1200px) {
-    .header__container {
-        padding: 40px 0;
-    }
-    
+@media(min-width:1200px) {
     .header__list {
         & .header__item:not(:last-child) {
             margin-right: 30px;
         }
+    }
+    .header__list-btn {
+        margin-left: 254px;
     }
 }
